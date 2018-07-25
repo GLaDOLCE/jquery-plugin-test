@@ -147,6 +147,7 @@ h1 a:hover{
 	color: white;
 }
 .nivoSlider{
+	border-radius: 10px;
 	position: relative;
 	margin-top: 60px;
 }
@@ -158,7 +159,7 @@ h1 a:hover{
 	background:rgba(0,0,0,0.6);
 }
 .parallax-window {
-    min-height: 400px;
+    min-height: 600px;
 	background: transparent;
 }
 .introduction{
