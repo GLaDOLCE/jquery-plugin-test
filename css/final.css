@@ -1,0 +1,322 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}                                           /*css reset樣式*/
+body{
+	width: 100%;
+	font-family:Microsoft JhengHei;
+}
+.wrap{
+	width: 1024px;
+	margin: auto;
+}
+a{
+	text-decoration: none;
+}
+.toplist{
+	height: 35px;
+	margin: 10px 15px 0 auto;
+}
+.toplist ul{
+	float: right;
+}
+.toplist li{
+	float: left;
+	padding: 7px;
+}
+.fblink{
+	color: #4460a0;
+}
+.twitterlink{
+	color: #00aaec; 
+}
+.toplist a{
+	display: block;
+	opacity:1;
+}
+.toplist a:hover{
+	transition: all 0.4s;
+	opacity:0.6;
+}
+.header{
+	height: 70px;
+	display: block;
+	background: white;
+	margin: auto;
+}
+.header h1{
+	float: left;
+}
+.header h1 a{
+	background-image: url("../img/logo.png");
+	background-repeat: no-repeat;
+	width: 170px;
+	height: 36px;
+	display: block;
+	text-indent: 101%;				/*字首縮排  101%為超出區域1%*/
+	overflow: hidden;				/*超出區域的顯示方式改為hidden*/
+	white-space: nowrap;			/*為避免超出區域時換行  設定為不換行*/
+	margin:17px 0px 17px 16px;
+	opacity:1;
+}
+h1 a:hover{
+	transition: all 0.5s;
+	opacity:0.6;
+}
+.aboutusul{
+	float: right;
+}
+.aboutus li{
+	text-align: center;
+	float: left;
+	line-height: 70px;
+}
+.aboutus li a{
+	width: 80px;
+	padding-left: 17px;
+	padding-right: 17px;
+	display: block;
+	color: #00cc99;
+}
+.home1,.home2,.home3{
+	position: relative;
+	overflow: hidden;
+}
+.border{
+	overflow: hidden;
+	position: absolute;
+	width: 114px;
+	background: #00cc99;
+	height: 5px;
+	bottom: -5px;
+	transition: all 0.5s;
+}
+.home1:hover .border,.home2:hover .border,.home3:hover .border,
+.home1.active .border,.home2.active .border,.home3.active .border{
+	bottom: 0px;
+}
+.scroll1,.scroll2,.scroll3{
+	display: none;
+}
+.scroll1 li,.scroll2 li,.scroll3 li{
+	float: none;
+	background: white;
+}
+.scroll1 a:hover,.scroll2 a:hover,.scroll3 a:hover{
+	transition: all 0.5s;
+	background: #00cc99;
+	color: white;
+}
+.nivoSlider{
+	position: relative;
+	margin-top: 60px;
+}
+.nivo-caption{
+	position: absolute;
+	top: 100px;
+	height: 200px;
+	font-size: 36px;
+	background:rgba(0,0,0,0.6);
+}
+.parallax-window {
+    min-height: 400px;
+	background: transparent;
+}
+.introduction{
+	height: 350px;
+	width: 1024px;
+	margin: 0px auto 60px auto;
+}
+.introduction li{
+	float: left;
+	width: 300px;
+	height: 350px;
+	margin-right: 32px;
+	border-radius: 5px;			/*邊角圓弧化*/
+	box-shadow: 1px 3px 5px gray;  /*區塊陰影  三個值依序為x軸陰影,y軸陰影,陰影柔焦程度*/
+}
+.introduction li .html{
+	margin: 25px 90px 0px 90px;
+}
+.introduction h2{
+	text-align: center;
+	font-size: 22px;
+	font-family: Microsoft JhengHei;
+	line-height: 36px;
+}
+.introduction p{
+	margin-left: 12px;
+	margin-right: 6px;
+	font-family: Microsoft JhengHei;
+	line-height: 24px;
+	letter-spacing:1px;
+}
+.responsive{
+	margin: 50px 40px 27px 40px;
+}
+.introduction p span{
+	letter-spacing:5px;		/*字體間距*/
+}
+.jquery{
+	margin: 32px 93px 8px 93px;
+}
+.introduction .jqueryli1{
+	box-shadow: 0px 0px 0px white;		/*重置父元素的li陰影*/
+	height: 24px;
+	margin: 1px 0px 1px 16px;
+}
+.clear{
+	clear:both;
+	}
+
+.dtitle{
+	font-weight:bold;
+	float: left;
+	margin:60px 340px 50px 340px;
+	font-size: 34px;
+	font-family: Microsoft JhengHei;
+}
+.different{
+	margin-bottom: 60px;
+}
+.different tr,.different td,.different th{
+	text-align: left;
+	border-bottom: 1px solid #dddddd;
+	border-top: 1px solid #dddddd;
+	padding: 15px 113px 15px 30px;
+	font-family: Microsoft JhengHei;
+}
+.th1{
+	font-weight:bold;
+	font-size: 18px;
+}
+.tr1{
+	background-color:#f7f7f7;
+}
+.great{
+	color: #00a67d;
+}
+.data{
+	margin-top: 60px;
+	margin-bottom: 60px;
+	padding: 20px;
+	width: 960px;
+	background: -webkit-linear-gradient(#00644b,#009872);
+	border-radius: 10px;
+}
+.indata{
+	text-align: center;
+	color: white;
+	font-size: 26px;
+	line-height: 40px;
+	margin: 0px 0px 20px 0px;
+}
+.introduce{
+	padding: 5px;
+	float: left;
+	margin: 10px 0px 10px 0px;
+	border-radius: 5px;
+}
+.label{
+	display: block;
+	font-family: Microsoft JhengHei;
+	margin: 20px 0px 0px 480px;
+	color: white;
+}
+.textarea{
+	display: block;
+	padding-left: 10px;
+	height: 30px;
+	width: 450px;
+	margin: 8px 0px 8px 480px;
+	border-radius: 5px;
+}
+.button{
+	cursor: pointer;			/*設定為可點選樣式*/
+	color: white;
+	width: 70px;
+	height: 32px;
+	background: #00cc99;
+	border-radius: 5px;
+	margin: 10px 0px 0px 455px;
+	font-family: Microsoft JhengHei;
+}
+.button:hover{		
+	transition: all 0.4s;		
+	color: red;
+	background: white;
+}
+.footer{
+	margin-top: 23px; 
+	margin-bottom: 52px;
+	width: 1000px;
+	float: left;
+}
+.footer img{
+	margin-left: 16px;
+	float: left;
+	opacity:1.0;				/*可使物件半透明濾鏡  1.0為正常狀態 0.6時為透明40%*/
+}
+.footer img:hover{
+	transition: all 0.4s;
+	opacity:0.6;
+}
+.contact{
+	float: right;
+	width: 220px;
+	margin-right: 10px;
+	font-size: 14px;
+	line-height: 24px;
+}
+.contact a{
+	opacity:1;
+	color: red;
+}
+.contact a:hover{
+	transition: all 0.4s;
+	opacity:0.6;
+}
+.gotop{
+	position: fixed;
+	bottom: 0px;
+	right: 10px;
+}
